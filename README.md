@@ -2,7 +2,7 @@
 
 Project page for **Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees**, served at **https://vinuni-fedm2rec.github.io/**.
 
-Structure follows the VinUni Medical MT page (Academic Project Page Template, adapted from Nerfies): header + news → overview → publications → prototype → team → others → footer.
+Structure follows the VinUni Medical MT page (Academic Project Page Template, adapted from Nerfies): header → overview → publications → team (PIs, members, collaborators) → footer.
 
 ## Files
 

@@ -196,34 +196,6 @@ body {
 .scroll-to-top:hover { background: var(--primary-hover); transform: translateY(-3px); }
 .scroll-to-top.visible { opacity: 1; visibility: visible; }
 
-/* ===== Prototype preview (same card language as the MedComms preview) ===== */
-#prototype { padding: 1.75rem 1.5rem 2.5rem; }
-#prototype .title.is-3 { margin-bottom: 1rem !important; padding-bottom: 0.7rem; font-size: 1.5rem; }
-
-.demo-layout { display: grid; gap: 0.6rem; max-width: 640px; margin: 0 auto; }
-.demo-preview {
-  display: block; overflow: hidden; padding-bottom: 0.65rem;
-  border: 1px solid #e1e8f1; border-radius: 1.25rem;
-  background: linear-gradient(180deg, #f3f8ff 0%, #eef8f9 100%);
-  color: #1b2533; text-align: left;
-}
-.demo-header, .demo-brand, .demo-brand-line { display: flex; align-items: center; gap: 0.65rem; }
-.demo-header { padding: 0.65rem 0.75rem; border-bottom: 1px solid #e1e8f1; background: #fff; }
-.demo-brand img { flex: none; width: 28px; height: 28px; }
-.demo-brand-line { flex-wrap: wrap; gap: 0.4rem; }
-.demo-title { color: #2e548a; font-size: 1rem; font-weight: 700; }
-.demo-tag { padding: 0.12rem 0.55rem; border-radius: 999px; background: #e3f6f8; color: #17707a; font-size: 0.7rem; font-weight: 600; }
-.demo-subtitle { display: block; color: #17707a; font-size: 0.7rem; font-weight: 600; }
-
-.demo-stage {
-  display: block; margin: 0.65rem 0.65rem 0; padding: 0.65rem;
-  border: 1px solid #e1e8f1; border-radius: 1rem; background: #fff;
-  box-shadow: 0 10px 30px rgba(31, 63, 110, 0.08);
-}
-.demo-figure-action { display: flex; justify-content: center; margin: 0.65rem 0.65rem 0; }
-.demo-launch { gap: 0.35rem; height: auto; padding: 0.3rem 0.65rem; font-size: 0.75rem; }
-.demo-launch[aria-disabled="true"] { opacity: 0.6; pointer-events: none; }
-
 /* Responsive */
 @media screen and (max-width: 768px) {
   .hero-body { padding: 2rem 1rem; }
@@ -232,7 +204,6 @@ body {
   .content.has-text-justified { font-size: 1rem; }
   .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .team-grid { padding: 0 1rem; gap: 1rem; }
-  .demo-tag { display: none; }
 }
 
 @media screen and (max-width: 480px) {
@@ -257,13 +228,6 @@ a:focus-visible, .button:focus-visible { outline: 2px solid var(--primary-color)
 
 /* Overview */
 .overview-text { font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); }
-
-/* Empty prototype stage */
-.demo-empty {
-  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-  padding: 2rem 1rem; color: #8592a3; font-size: 0.9rem; text-align: center;
-}
-.demo-empty i { font-size: 1.6rem; color: #3fb8c4; }
 
 /* Publication extras */
 .eql-cntrb { font-size: 0.8rem; color: var(--text-light); font-style: italic; margin-top: 0.15rem; }
