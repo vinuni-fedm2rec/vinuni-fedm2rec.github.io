@@ -166,6 +166,35 @@
             </div>
           </li>
 
+          <li class="box publication-entry" id="paper-llm-rerank">
+            <p class="publication-entry-venue">Machine Learning Journal</p>
+            <h4 class="title is-4 publication-entry-title">Enhancing Graph-based Recommendations with Majority-Voting LLM-Rerank Augmentation</h4>
+            <p class="publication-entry-authors">Minh-Anh Nguyen<sup>*</sup>, Bao Nguyen<sup>*</sup>, N. T. Ha Lan<sup>*</sup>, Tuan-Anh Hoang, Duc-Trong Le, Dung D. Le</p>
+            <p class="eql-cntrb"><sup>*</sup>Equal contribution</p>
+            <div class="buttons publication-actions">
+              <a href="https://link.springer.com/article/10.1007/s10994-026-07051-9" target="_blank" rel="noopener" class="button is-primary"><span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span><span>Paper</span></a>
+              <a href="https://doi.org/10.1007/s10994-026-07051-9" target="_blank" rel="noopener" class="button is-dark"><span class="icon"><i class="fas fa-link" aria-hidden="true"></i></span><span>DOI</span></a>
+              <button type="button" class="button is-light toggle" data-target="abs-llm-rerank" aria-expanded="false"><span class="icon"><i class="fas fa-align-left" aria-hidden="true"></i></span><span>Abstract</span></button>
+              <button type="button" class="button is-light toggle" data-target="bib-llm-rerank" aria-expanded="false"><span class="icon"><i class="fas fa-quote-right" aria-hidden="true"></i></span><span>BibTeX</span></button>
+            </div>
+            <div class="toggle-panel abstract" id="abs-llm-rerank" hidden>
+              <p>Recommendation systems often suffer from data sparsity, caused by limited user-item interactions, which degrades their performance and amplifies popularity bias in real-world scenarios. This paper proposes a novel data augmentation framework that leverages Large Language Models (LLMs) and item textual descriptions to enrich interaction data. By few-shot prompting LLMs multiple times to rerank items and aggregating the results via majority voting, we generate high-confidence synthetic user-item interactions, supported by theoretical guarantees based on the concentration of measure. To effectively leverage the augmented data in the context of a graph recommendation system, we integrate it into a graph contrastive learning framework to mitigate distributional shift and alleviate popularity bias. Extensive experiments show that our method improves accuracy and reduces popularity bias, outperforming strong baselines.</p>
+            </div>
+            <div class="toggle-panel bibtex" id="bib-llm-rerank" hidden>
+              <button type="button" class="copy-btn" aria-label="Copy BibTeX"><i class="fas fa-copy" aria-hidden="true"></i> Copy</button>
+<pre><code>@article{nguyen2026enhancing,
+  title={Enhancing Graph-based Recommendations with Majority-Voting LLM-Rerank Augmentation},
+  author={Nguyen, Minh-Anh and Nguyen, Bao and Ha Lan, NT and Hoang, Tuan-Anh and Le, Duc-Trong and Le, Dung D},
+  journal={Machine Learning},
+  volume={115},
+  number={5},
+  pages={117},
+  year={2026},
+  publisher={Springer}
+}</code></pre>
+            </div>
+          </li>
+
           <li class="box publication-entry" id="paper-obc-prune">
             <p class="publication-entry-venue is-preprint">Preprint</p>
             <h4 class="title is-4 publication-entry-title">OBC-Prune: Outcome-Based Calibration for Large Reasoning Model Pruning</h4>
@@ -302,6 +331,18 @@
               </figure>
               <h4 class="title is-5 mt-3">
                 <span class="author-block"><a href="https://scholar.google.com/citations?user=dr5PDSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Ha Lan Nguyen</a></span>
+              </h4>
+              <p class="subtitle is-6">MSc CS Student @ VinUni</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="box team-box">
+              <figure class="avatar">
+                <img src="static/images/Phuong-Dai-Bui.jpg" alt="Phuong Dai Bui" loading="lazy" onerror="this.parentNode.classList.add('placeholder'); this.replaceWith(Object.assign(document.createElement('span'), {textContent: 'PB'}))">
+              </figure>
+              <h4 class="title is-5 mt-3">
+                <span class="author-block"><a href="https://scholar.google.com/citations?user=xhHwED0AAAAJ&amp;hl=vi&amp;oi=ao" target="_blank" rel="noopener">Phuong Dai Bui</a></span>
               </h4>
               <p class="subtitle is-6">MSc CS Student @ VinUni</p>
             </div>
