@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    FedM²Rec project page — https://vinuni-fedm2rec.github.io/
+    Content source: Google Sheet "FedM²Rec Project Website — Content Collection"
+    (tabs: Site info, Team members, Publications, News, Others).
+    "TODO (sheet: ...)" marks a row that is still empty in the sheet.
+  -->
+
+  <title>FedM²Rec | Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees</title>
+  <meta name="title" content="Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees">
+  <!-- TODO (sheet: Site info → Meta description) — built from the project title until filled -->
+  <meta name="description" content="FedM²Rec: Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees.">
+  <!-- TODO (sheet: Site info → Keywords) — uses the sheet's example list until filled -->
+  <meta name="keywords" content="federated learning, recommender systems, multimodal, multi-objective optimization, differential privacy, secure aggregation">
+  <!-- TODO (sheet: Site info → Site author / organization) -->
+  <meta name="author" content="FedM²Rec">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vinuni-fedm2rec.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees">
+  <meta property="og:description" content="FedM²Rec: Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees.">
+  <meta property="og:url" content="https://vinuni-fedm2rec.github.io/">
+  <!-- TODO (sheet: Site info → Cover image) — 1200×630 at static/images/cover.jpg -->
+  <meta property="og:image" content="https://vinuni-fedm2rec.github.io/static/images/cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees">
+  <meta name="twitter:image" content="https://vinuni-fedm2rec.github.io/static/images/cover.jpg">
+
+  <!-- TODO (sheet: Site info → Theme color) — template default -->
+  <meta name="theme-color" content="#2563eb">
+
+  <link rel="icon" href="static/images/vinuni-logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <script defer src="static/js/index.js"></script>
+</head>
+<body>
+
+  <button class="scroll-to-top" type="button" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <main id="main-content">
+
+  <!-- Header -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- Sheet: Logo(s) -->
+            <figure class="image is-inline-block mb-5 site-logo">
+              <img src="static/images/vinuni-logo.png" alt="VinUniversity logo" onerror="this.closest('figure').hidden = true">
+            </figure>
+
+            <p class="project-acronym">FedM²Rec</p>
+            <h1 class="title is-1 publication-title">Federated Multimodal and Multi-Objective Recommendations with Security and Privacy Guarantees</h1>
+
+            <!-- TODO (sheet: Site info → Affiliations) — numbered list of colleges/centers with URLs -->
+            <div class="is-size-5 publication-authors affiliation-list">
+              <span class="author-block"><a href="https://vinuni.edu.vn/" target="_blank" rel="noopener">VinUniversity</a></span>
+            </div>
+
+            <!-- TODO (sheet: Site info → Sections in the nav bar) — template default order -->
+            <nav class="publication-links" aria-label="Sections">
+              <span class="link-block">
+                <a href="#publications" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-newspaper" aria-hidden="true"></i></span><span>Publications</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#team" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span><span>Team</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#prototype" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-network-wired" aria-hidden="true"></i></span><span>Prototype</span>
+                </a>
+              </span>
+              <!-- Others: sheet tab "Others" is empty — uncomment together with the #others section
+              <span class="link-block">
+                <a href="#others" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span><span>Others</span>
+                </a>
+              </span> -->
+            </nav>
+
+            <!-- News: sheet tab "News" is empty. When rows are added, uncomment:
+            <div class="latest-publication" aria-label="Latest news">
+              <div class="latest-label">News</div>
+              <div class="news-items">
+                <p><time datetime="YYYY-MM">MM/YYYY</time>: <a href="#paper-id"><strong>Headline</strong></a></p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Overview — TODO (sheet: Site info → Project overview), 2–4 sentences -->
+  <section class="section hero is-light" id="overview">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Project Overview</h2>
+          <div class="content has-text-centered overview-text">
+            <p>
+              <strong>FedM²Rec</strong> is a research project at <a class="inline-strong" href="https://vinuni.edu.vn/" target="_blank" rel="noopener">VinUniversity</a> on federated multimodal and multi-objective recommendations with security and privacy guarantees.
+            </p>
+          </div>
+          <div class="pillars">
+            <div class="pillar"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i><span>Federated</span></div>
+            <div class="pillar"><i class="fas fa-photo-film" aria-hidden="true"></i><span>Multimodal</span></div>
+            <div class="pillar"><i class="fas fa-scale-balanced" aria-hidden="true"></i><span>Multi-objective</span></div>
+            <div class="pillar"><i class="fas fa-shield-halved" aria-hidden="true"></i><span>Secure &amp; private</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications — sheet tab "Publications" -->
+  <section class="section" id="publications">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Publications</h2>
+
+      <section class="publication-group" aria-labelledby="publications-2026">
+        <h3 class="publication-group-title" id="publications-2026">2026</h3>
+        <ul class="publication-list">
+
+          <li class="box publication-entry" id="paper-lanr">
+            <p class="publication-entry-venue">NeurIPS 2026</p>
+            <h4 class="title is-4 publication-entry-title">Latent Abstraction for Retrieval-Augmented Generation</h4>
+            <p class="publication-entry-authors">Ha Lan N.T<sup>*</sup>, Minh-Anh Nguyen<sup>*</sup>, Dung D. Le</p>
+            <p class="eql-cntrb"><sup>*</sup>Equal contribution</p>
+            <div class="buttons publication-actions">
+              <a href="https://arxiv.org/abs/2604.17866" target="_blank" rel="noopener" class="button is-primary"><span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span><span>arXiv</span></a>
+              <a href="https://github.com/akBear23/LAnR" target="_blank" rel="noopener" class="button is-dark"><span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span><span>Code</span></a>
+              <button type="button" class="button is-light toggle" data-target="abs-lanr" aria-expanded="false"><span class="icon"><i class="fas fa-align-left" aria-hidden="true"></i></span><span>Abstract</span></button>
+              <button type="button" class="button is-light toggle" data-target="bib-lanr" aria-expanded="false"><span class="icon"><i class="fas fa-quote-right" aria-hidden="true"></i></span><span>BibTeX</span></button>
+            </div>
+            <div class="toggle-panel abstract" id="abs-lanr" hidden>
+              <p>Retrieval-Augmented Generation (RAG) has become a standard approach for enhancing large language models (LLMs) with external knowledge, mitigating hallucinations, and improving factuality. However, existing systems rely on generating natural language queries at each hop and maintaining a strict architectural separation between retriever and generator, preventing them from leveraging the full representational capacity of the LLM. We propose <strong>LAnR</strong> (Latent Abstraction for RAG), a unified framework in which a single LLM jointly performs encoding, retrieval, and generation entirely within its own latent space. Rather than generating textual queries, LAnR produces dense retrieval vectors from the hidden states of a designated <code>[PRED]</code> token and uses them to match against encoded document representations from the same model. Furthermore, LAnR adaptively decides when sufficient evidence has been retrieved using a lightweight MLP control head over those same hidden states, eliminating both the separate retriever and explicit token-level stopping reasoning. This design is motivated by our empirical observation that answer token entropy reliably signals retrieval sufficiency. Extensive experiments on six QA benchmarks spanning single-hop and multi-hop settings demonstrate that LAnR outperforms existing RAG methods, while achieving improved inference efficiency through reduced number of retrieval calls and tighter model integration.</p>
+            </div>
+            <div class="toggle-panel bibtex" id="bib-lanr" hidden>
+              <button type="button" class="copy-btn" aria-label="Copy BibTeX"><i class="fas fa-copy" aria-hidden="true"></i> Copy</button>
+<pre><code>@misc{t2026latentabstractionretrievalaugmentedgeneration,
+      title={Latent Abstraction for Retrieval-Augmented Generation},
+      author={Ha Lan N. T and Minh-Anh Nguyen and Dung D. Le},
+      year={2026},
+      eprint={2604.17866},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.17866},
+}</code></pre>
+            </div>
+          </li>
+
+          <li class="box publication-entry" id="paper-obc-prune">
+            <p class="publication-entry-venue is-preprint">Preprint</p>
+            <h4 class="title is-4 publication-entry-title">OBC-Prune: Outcome-Based Calibration for Large Reasoning Model Pruning</h4>
+            <p class="publication-entry-authors">Ha Lan Nguyen, Huy Hoang Tran, Trac-Duy Tran, Dung D. Le</p>
+            <div class="buttons publication-actions">
+              <a href="https://arxiv.org/abs/2609.17890" target="_blank" rel="noopener" class="button is-primary"><span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span><span>arXiv</span></a>
+              <a href="https://github.com/akBear23/OBC-Prune" target="_blank" rel="noopener" class="button is-dark"><span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span><span>Code</span></a>
+              <button type="button" class="button is-light toggle" data-target="abs-obc" aria-expanded="false"><span class="icon"><i class="fas fa-align-left" aria-hidden="true"></i></span><span>Abstract</span></button>
+              <button type="button" class="button is-light toggle" data-target="bib-obc" aria-expanded="false"><span class="icon"><i class="fas fa-quote-right" aria-hidden="true"></i></span><span>BibTeX</span></button>
+            </div>
+            <div class="toggle-panel abstract" id="abs-obc" hidden>
+              <p>Large reasoning models (LRMs) generate long chain-of-thought traces before answering, creating significant inference overhead. Pruning can reduce this cost, but its effectiveness depends on the calibration data used to estimate parameter importance. Recent work calibrates on the model's own rollouts instead of generic dataset, but treats all reasoning tokens uniformly, regardless of whether they contribute to successful reasoning. As a result, pruning protects weights by statistical salience rather than by their contribution to correct reasoning, so weights behind erroneous computation survive as readily as those behind correct computation. These erroneous patterns then get carried into the pruned model, degrading reasoning quality, producing both lower accuracy and longer reasoning traces. We propose Outcome-Based Calibration for Large Reasoning Model Pruning (OBC-Prune) to close this gap. OBC first constructs difficulty-matched pairs of correct and incorrect rollouts from problems the model answers inconsistently. It then estimates the causal importance of each reasoning sentence through intervention-based analysis, quantifying how removing its influence affects subsequent predictions. These causal importance scores are converted into per-token weights that rescale the calibration activations used by one-shot pruning methods (SparseGPT, Wanda, ALPS), without modifying the underlying pruning algorithms. Experiments on DeepSeek-R1-Distill-Qwen 1.5B, 7B, and 14B models at 40% and 50% sparsity demonstrate consistent improvements over state-of-the-art calibration baselines across most model sizes and sparsity levels on MATH500, LiveCodeBench, and AIME 2025. These results indicate that preserving causally important reasoning circuits is a substantially more effective pruning objective than uniformly preserving observed activations.</p>
+            </div>
+            <div class="toggle-panel bibtex" id="bib-obc" hidden>
+              <button type="button" class="copy-btn" aria-label="Copy BibTeX"><i class="fas fa-copy" aria-hidden="true"></i> Copy</button>
+<pre><code>@misc{nguyen2026obcpruneoutcomebasedcalibrationlarge,
+      title={OBC-Prune: Outcome-Based Calibration for Large Reasoning Model Pruning},
+      author={Ha Lan Nguyen and Huy Hoang Tran and Trac-Duy Tran and Dung D. Le},
+      year={2026},
+      eprint={2609.17890},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2609.17890},
+}</code></pre>
+            </div>
+          </li>
+
+          <li class="box publication-entry" id="paper-pcml">
+            <p class="publication-entry-venue is-review">Under review (ECIR)</p>
+            <h4 class="title is-4 publication-entry-title">Towards Complementary Graph Views for Multimodal Recommendation</h4>
+            <p class="publication-entry-authors">Lam Anh Vu, Hai-Dang Kieu, Min Xu, Dung D. Le</p>
+            <div class="buttons publication-actions">
+              <!-- PDF, code and BibTeX: "<Update soon>" in the sheet -->
+              <button type="button" class="button is-light toggle" data-target="abs-pcml" aria-expanded="false"><span class="icon"><i class="fas fa-align-left" aria-hidden="true"></i></span><span>Abstract</span></button>
+              <span class="soon-tag">Paper &amp; code coming soon</span>
+            </div>
+            <div class="toggle-panel abstract" id="abs-pcml" hidden>
+              <p>Graph-based multimodal recommenders increasingly exploit additional graph structures or modified propagation patterns to capture diverse preference signals. The key question, however, is whether such differences actually contribute predictive information beyond the original view, rather than reproduce what is already captured or disrupt useful collaborative evidence. We address this gap by formulating predictive complementarity, where complementarity is determined by how much a candidate view improves the recommendation objective relative to a reference view. Our analysis suggests that adaptive propagation may help a candidate view capture complementary information for preference relations that remain insufficiently captured by the reference. Based on this insight, we propose Predictive Complementarity Mask Learning (PCML), which preserves the reference propagation while learning a soft-masked candidate view and adaptively fusing it with the reference view for recommendation. Experiments on three real-world datasets show superior performance over strong state-of-the-art baselines and consistent gains across backbones, feature representations, and modality combinations. Further analyses show gains beyond capacity scaling or branch duplication, together with evidence of predictive complementarity, different behaviors across popular and niche items, and a distinct spectral profile in the learned view.</p>
+            </div>
+          </li>
+
+          <li class="box publication-entry" id="paper-carp">
+            <p class="publication-entry-venue is-review">Under review (WWW)</p>
+            <h4 class="title is-4 publication-entry-title">Coverage-Aware Reachability Planning for Target-Driven Conversational Recommendation</h4>
+            <p class="publication-entry-authors">Minh Duc Le, Huy Dao, Vu Lam Anh, Lizi Lao, Dung D. Le</p>
+            <div class="buttons publication-actions">
+              <!-- PDF and code: "<Update soon>" in the sheet -->
+              <button type="button" class="button is-light toggle" data-target="abs-carp" aria-expanded="false"><span class="icon"><i class="fas fa-align-left" aria-hidden="true"></i></span><span>Abstract</span></button>
+              <span class="soon-tag">Paper &amp; code coming soon</span>
+            </div>
+            <div class="toggle-panel abstract" id="abs-carp" hidden>
+              <p>Target-driven conversational recommendation requires steering multi-turn interactions toward concrete goals while adapting to unpredictable user feedback. Offline planners offer reusable guidance but assume it is always locally applicable, without tracking when a live state moves "off-map". We propose CARP (Coverage-Aware Reachability Planning), a framework that learns a goal-conditioned reachability distance over dialogue states via a Bellman objective and constructs guidance-backed planning graphs from offline experience. The learned distance provides a unified metric for weighting graph edges, retrieving relevant guidance, detecting off-map states at inference time, and scoring recovery rollouts. Building on this metric, CARP adaptively switches between shortest-path guidance precomputed on the offline graphs for covered states and value-guided rollouts for off-map states, steering the dialogue back toward regions supported by offline experience. As a planner, CARP achieves the highest success rate on TopDial and DuRecDial2.0, with the fewest turns on DuRecDial2.0 and lower inference cost than every search-based baseline, and its retrieval-only variant already outperforms every baseline on DuRecDial2.0 at one LLM call per turn. Routing rollouts by the learned distance beats both budget-matched random routing and rolling out everywhere; as a failure predictor, the distance achieves the highest average AUPRC among semantic and lexical retrieval representations on dialogues of eight planners.</p>
+            </div>
+          </li>
+
+          <li class="box publication-entry" id="paper-to-reason-not-to-stop">
+            <p class="publication-entry-venue is-review">Under review (ACL RR)</p>
+            <h4 class="title is-4 publication-entry-title">To Reason but Not to Stop: Understanding and Recovering Pruned Large Reasoning Models</h4>
+            <p class="publication-entry-authors">Minh-Anh Nguyen, Ha Lan Nguyen, Xiyan Fu, Dung D. Le, Wei Lu</p>
+            <div class="buttons publication-actions">
+              <a href="https://arxiv.org/abs/2610.19934" target="_blank" rel="noopener" class="button is-primary"><span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span><span>arXiv</span></a>
+              <button type="button" class="button is-light toggle" data-target="abs-tgas" aria-expanded="false"><span class="icon"><i class="fas fa-align-left" aria-hidden="true"></i></span><span>Abstract</span></button>
+              <button type="button" class="button is-light toggle" data-target="bib-tgas" aria-expanded="false"><span class="icon"><i class="fas fa-quote-right" aria-hidden="true"></i></span><span>BibTeX</span></button>
+            </div>
+            <div class="toggle-panel abstract" id="abs-tgas" hidden>
+              <p>Weight pruning can degrade the accuracy of large reasoning models (LRMs), yet it remains unclear whether it damages reasoning itself. We find that much of this degradation stems from a failure to stop rather than to reason. As sparsity increases, pruned LRMs increasingly fail to terminate within the token budget, often after the correct answer has appeared in their reasoning, instead falling into repetitive loops, even though they still recognize where the dense model would stop. We further find that the hidden-state difference between terminating and looping continuations is consistent across pruned checkpoints, suggesting a shared direction associated with committing to an answer. Building on this, we propose Termination-Guided Activation Steering (TGAS), a training-free method that adds this direction to the residual stream at inference time. Across six LRMs, three pruning pipelines, and math and code benchmarks, TGAS improves termination and overall accuracy while reducing repetitive reasoning and generation length, showing that this failure is actionable.</p>
+            </div>
+            <div class="toggle-panel bibtex" id="bib-tgas" hidden>
+              <button type="button" class="copy-btn" aria-label="Copy BibTeX"><i class="fas fa-copy" aria-hidden="true"></i> Copy</button>
+<pre><code>@misc{nguyen2026reasonstopunderstandingrecovering,
+      title={To Reason but Not to Stop: Understanding and Recovering Pruned Large Reasoning Models},
+      author={Minh-Anh Nguyen and Nguyen T. Ha Lan and Xiyan Fu and Dung D. Le and Wei Lu},
+      year={2026},
+      eprint={2610.19934},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2610.19934},
+}</code></pre>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </div>
+  </section>
+
+  <!-- Prototype — TODO (sheet: Site info → Prototype rows are all empty) -->
+  <section class="section" id="prototype">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Prototype</h2>
+          <div class="content demo-layout">
+            <div class="demo-preview">
+              <span class="demo-header">
+                <span class="demo-brand">
+                  <img src="static/images/vinuni-logo.png" alt="" width="28" height="28" onerror="this.hidden = true">
+                  <span>
+                    <span class="demo-brand-line">
+                      <span class="demo-title">FedM²Rec</span>
+                      <span class="demo-tag">Research prototype</span>
+                    </span>
+                    <span class="demo-subtitle">Federated multimodal and multi-objective recommendation</span>
+                  </span>
+                </span>
+              </span>
+              <span class="demo-stage demo-empty">
+                <i class="fas fa-flask" aria-hidden="true"></i>
+                <span>The prototype demo is in development.</span>
+              </span>
+              <div class="demo-figure-action">
+                <span class="button is-link is-small demo-launch" aria-disabled="true">Demo coming soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team — sheet tab "Team members" -->
+  <section class="section hero is-light" id="team">
+    <div class="container is-fluid">
+      <h2 class="title is-3 has-text-centered mb-6">Team Members</h2>
+
+      <div class="mb-6">
+        <h3 class="title is-4 has-text-centered mb-5">Members</h3>
+        <div class="team-grid">
+
+          <div class="team-member">
+            <div class="box team-box">
+              <figure class="avatar">
+                <!-- Photo from the sheet (Google Drive). Better: save as static/images/Lam-Anh-Vu.jpg and point src there. -->
+                <img src="https://drive.google.com/thumbnail?id=12QIcmAfIr-B2BIxnApXst0E4ZyzbAFJL&sz=w400" alt="Lam Anh Vu" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('placeholder'); this.replaceWith(Object.assign(document.createElement('span'), {textContent: 'LV'}))">
+              </figure>
+              <h4 class="title is-5 mt-3">
+                <span class="author-block"><a href="https://www.linkedin.com/in/anh-v%C5%A9-l%C3%A2m-945b98224/" target="_blank" rel="noopener">Lam Anh Vu</a></span>
+              </h4>
+              <p class="subtitle is-6">MSc CS Student @ VinUni</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="box team-box">
+              <figure class="avatar">
+                <!-- Photo from the sheet (Google Drive). Better: save as static/images/Ha-Lan-Nguyen.jpg and point src there. -->
+                <img src="https://drive.google.com/thumbnail?id=1qdReLKT9gH0XB0qrh8T_QauD8GsS4b-R&sz=w400" alt="Ha Lan Nguyen" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('placeholder'); this.replaceWith(Object.assign(document.createElement('span'), {textContent: 'HN'}))">
+              </figure>
+              <h4 class="title is-5 mt-3">
+                <span class="author-block"><a href="https://scholar.google.com/citations?user=dr5PDSgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Ha Lan Nguyen</a></span>
+              </h4>
+              <p class="subtitle is-6">MSc CS Student @ VinUni</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Others — sheet tab "Others" is empty (Type, Caption, Image file, Link). Uncomment when filled.
+  <section class="section" id="others">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Others</h2>
+    </div>
+  </section> -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              Built with the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>, adapted from <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a>.
+              <br>This website is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a> (CC BY-SA 4.0).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
